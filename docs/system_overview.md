@@ -75,8 +75,8 @@ Lower plenum → Reactor Core inlet (loop repeats)
 
 **Loop volume:** ~1993 L (70.4 ft³) total fuel salt in system  
 **Pipe diameter (main):** ~101.6 mm (4 in) schedule-40 Hastelloy-N  
-**Average fuel velocity in core channels:** ~0.37 m/s  
-**Fuel residence time in core:** ~8.5 s (at design flow)
+**Average fuel velocity in core channels:** ~0.22 m/s  
+**Fuel residence time in core:** ~7.4 s (at design flow)
 
 ---
 
@@ -123,7 +123,7 @@ The MSRE was housed in a reinforced concrete building. The main areas were:
 | December 1969 | Final shutdown |
 | 1969–1973 | Decontamination, post-operation surveillance |
 
-Total operation: ~13,000 effective full-power hours (EFPH).
+Total operation: ~13,172 MWh(t) total thermal energy produced ≈ **1,795 EFPH at rated power (7.34 MWt)**. Some historical ORNL summaries express this as ~13,000 "equivalent full-power hours at 1 MWt" reference — a non-standard unit; verify exact figure against ORNL-4832.
 
 ---
 

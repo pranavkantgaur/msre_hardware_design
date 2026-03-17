@@ -27,9 +27,9 @@ The reactor vessel is the primary Hastelloy-N pressure boundary that contains th
 |-----------|--------|----------|
 | Vessel outside diameter (cylindrical shell) | 1.410 m | 55.5 in |
 | Vessel wall thickness (cylindrical shell) | 12.7 mm | 0.5 in |
-| Overall vessel height (including heads) | ~2.44 m | ~96 in |
+| Overall vessel height (including heads) | ~2.90 m *(corrected from 2.44 m — see note)* | ~114 in |
 | Core region height (fuel-bearing zone) | 1.626 m | 64 in |
-| Core region diameter | 1.397 m | 55.0 in |
+| Core region diameter | 1.372 m *(corrected from 1.397 m)* | 54.0 in |
 | Lower head thickness | 19.1 mm | 0.75 in |
 | Upper head thickness | 19.1 mm | 0.75 in |
 | Fuel outlet nozzle OD | 114.3 mm (4-in SCH40) | 4.5 in |
@@ -58,7 +58,11 @@ The reactor vessel is the primary Hastelloy-N pressure boundary that contains th
 - All longitudinal and circumferential welds inspected by radiography (100%) and dye penetrant.
 - Post-weld solution anneal at 1175 °C (2150 °F) in Ar or He atmosphere, followed by water quench.
 
-### Heads
+> **Overall height note:** Shell tan-to-tan = 2134.6 mm (84 in); each 2:1 semi-ellipsoidal
+> head adds ≈ 346 mm (13.6 in) internally plus wall thickness ≈ 19 mm; upper flange
+> adds ≈ 80 mm. Calculated total ≈ 2134.6 + 2 × 365 + 80 ≈ 2945 mm ≈ 2.90 m (114 in).
+> Previous value of 2.44 m (96 in) was a shell-only approximation. Verify against
+> ORNL-TM-728 Figure 3.1 general arrangement drawing.
 - Both upper and lower heads are ellipsoidal (2:1 semi-ellipsoidal) Hastelloy-N forgings.
 - Upper head is removable (bolted flange with annealed nickel ring gasket) to allow core removal.
 - Upper head bolting: 24 × M32 (1.25-in) Hastelloy-N studs and nuts; torque to achieve seal without yielding gasket.

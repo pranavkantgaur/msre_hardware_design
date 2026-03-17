@@ -11,7 +11,7 @@
 | Design heat duty | 7.34 MWt |
 | Operating heat duty | Up to 8 MWt |
 | Overall heat transfer coefficient (U, calculated) | ~4,200 W/(m²·K) |
-| Log-mean temperature difference (LMTD) | ~50.6 °C |
+| Log-mean temperature difference (LMTD) | ~55.3 °C *(corrected from 50.6 °C; calculated below)* |
 | LMTD correction factor (F) | ~0.98 (single-pass shell, U-tube ≈ 1.0) |
 | Effective heat transfer area | ~36.5 m² |
 | Fouling factor (both sides) | 0 (no fouling expected with clean fluoride salts) |
@@ -22,6 +22,20 @@
 |--------|-------------|--------------|-----|
 | Fuel salt (shell side) | 654 | 632 | −22 °C |
 | Coolant salt (tube side) | 546 | 621 | +75 °C |
+
+**LMTD calculation (counterflow):**
+- Hot end ΔT = T_fuel_in − T_coolant_out = 654 − 621 = **33 °C**
+- Cold end ΔT = T_fuel_out − T_coolant_in = 632 − 546 = **86 °C**
+- LMTD = (86 − 33) / ln(86/33) = 53 / ln(2.606) = 53 / 0.958 = **55.3 °C**
+
+> **Heat-balance note:** Using documented values (primary flow 1200 USgpm, ρ = 2.24 g/cm³,
+> cp = 1.508 J/g·K, ΔT = 22 °C) implies Q ≈ 5.6 MWt on the fuel side, not 7.34 MWt.
+> The coolant side (750 USgpm, ρ = 1.94 g/cm³, cp = 2.38 J/g·K, ΔT = 75 °C) implies
+> Q ≈ 16.4 MWt — neither value is consistent with 7.34 MWt.
+> This is a known documentation inconsistency. Verify cp values against ORNL-4344 and
+> temperatures/flows against ORNL-TM-728 Section 4 to obtain a self-consistent set.
+> The most likely root cause is that the 632/654 °C temperatures correspond to a
+> lower-power operating condition, not the full 7.34 MWt design point.
 
 ---
 

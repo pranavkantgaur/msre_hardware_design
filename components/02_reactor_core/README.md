@@ -18,7 +18,7 @@ The reactor core is a cylindrical assembly of nuclear-grade graphite stringers (
 | Neutron flux (peak fast, E>0.18 MeV) | ~3 × 10¹² n/cm²·s |
 | Design fluence (lifetime) | <10²² n/cm² fast (graphite serviceable) |
 | Fuel-to-moderator volume ratio | ~22.5% salt / 77.5% graphite |
-| Core power density (average) | ~4 kW/L in active zone |
+| Core power density (average) | ~3 kW/L in active zone |
 
 ---
 
@@ -26,14 +26,26 @@ The reactor core is a cylindrical assembly of nuclear-grade graphite stringers (
 
 | Parameter | Metric | Imperial |
 |-----------|--------|----------|
-| Active core diameter | 1.397 m | 55.0 in |
+| Active core diameter | 1.372 m *(corrected from 1.397 m — see note below)* | 54.0 in |
 | Active core height | 1.626 m | 64.0 in |
 | Graphite stringer cross-section | 50.8 mm × 50.8 mm | 2.0 in × 2.0 in |
 | Stringer pitch (square array) | 53.85 mm | 2.12 in |
-| Total graphite stringers | 1,140 (approx.) | — |
+| Total graphite stringers | ~509 *(corrected from 1,140 — see note below)* | — |
 | Control rod thimble channels | 3 | — |
 | Fuel-salt void fraction | ~22.5% | — |
 | Core region graphite packing fraction | ~77.5% | — |
+
+> **Core diameter correction:** The vessel inner diameter is 1384.6 mm (54.5 in).
+> The core README states a 6.4 mm (0.25 in) annular clearance between graphite and
+> vessel wall, which sets the graphite assembly OD at ≈ 1372 mm (54.0 in), not 1397 mm
+> (55.0 in) as previously stated. An OD of 1397 mm would exceed the vessel ID.
+> Verify exact dimension against ORNL-TM-728 Figure 3.1.
+>
+> **Stringer count correction:** At 50.8 mm × 50.8 mm cross-section on 53.85 mm pitch,
+> approximately 509 stringers fit in a 54-in (1372 mm) diameter core
+> (π × 686² / 53.85² ≈ 509). The previously stated value of 1,140 would require a
+> core diameter of ~80 in — larger than the vessel. Verify exact count against
+> ORNL-TM-728 Table 3.1.
 
 ---
 
@@ -119,10 +131,14 @@ Three control rod thimble channels are located in the central core region:
 |-----------|-------|
 | Effective multiplication factor (k-eff) at HFP | ~1.004 (with control rods partially inserted) |
 | Prompt neutron lifetime | ~3.0 × 10⁻⁴ s |
-| Delayed neutron fraction (β_eff) | ~0.00265 (for ²³⁵U fuel) |
+| Delayed neutron fraction (β_eff) | ~0.004 (²³⁵U fuel, corrected; see note) |
 | Temperature coefficient of reactivity (overall) | ~−8.7 × 10⁻⁵ Δk/k per °C |
 | Void coefficient | Moderately negative (loss of fuel salt inserts negative reactivity) |
 | Critical mass (²³⁵U at MSRE conditions) | ~33 kg |
+
+> **β_eff note:** The value 0.00265 previously listed is consistent with ²³³U fuel
+> (static β = 0.0027, circulation-reduced). For ²³⁵U fuel (static β = 0.0065),
+> the circulating-fuel effective β is approximately 0.004. Verify against ORNL-TM-1647.
 
 ---
 
@@ -133,6 +149,6 @@ Three control rod thimble channels are located in the central core region:
 | Graphite lower ends | Core support grid | Seated in machined pockets; sliding fit (thermal expansion) |
 | Graphite upper ends | Upper hold-down grid | Retaining feature; allows some axial movement |
 | Control rod thimbles | Reactor vessel top head nozzles | Welded to vessel nozzle top; pass through upper grid |
-| Core outer boundary | Reactor vessel inner wall | 6.4 mm (0.25 in) annular gap (reflector boundary) |
+| Core outer boundary | Reactor vessel inner wall | 6.4 mm (0.25 in) annular gap (clearance between graphite OD = 1372 mm and vessel ID = 1384.6 mm) |
 | Fuel salt inlet | Lower plenum (bottom of vessel) | Fuel salt floods lower plenum → enters core channel bottoms |
 | Fuel salt outlet | Upper plenum (top of vessel) | Fuel salt exits channel tops → collects in upper plenum |

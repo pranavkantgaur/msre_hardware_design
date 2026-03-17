@@ -8,9 +8,16 @@
 
 ### Active Zone Envelope
 - **Shape:** Right circular cylinder
-- **Outer diameter:** 1397.0 mm (55.0 in)
+- **Outer diameter:** 1372.0 mm (54.0 in)
+  > *Corrected from 1397 mm (55.0 in): the vessel inner diameter is 1384.6 mm (54.5 in);
+  > a 6.4 mm (0.25 in) annular clearance gap between the graphite assembly and the vessel
+  > wall (confirmed in core README) sets the graphite OD at ≈ 1371.8 mm ≈ 1372 mm.
+  > Verify exact value against ORNL-TM-728 Figure 3.1 drawing.*
 - **Active height:** 1626.4 mm (64.0 in)
-- **Reflector annulus thickness:** ~152 mm (6.0 in) on sides and ~305 mm (12.0 in) top/bottom
+- **Radial graphite reflector thickness:** ~76 mm (3.0 in) on sides (solid graphite blocks, no fuel channels)
+  > *The reflector fills the space between Zone II outer boundary (r ≈ 610 mm) and the
+  > graphite assembly OD (r = 686 mm). Verify exact annulus geometry against ORNL-TM-728.*
+- **Axial graphite reflector thickness:** ~152 mm (6.0 in) top/bottom (end blocks, no fuel channels)
 
 ### Graphite Stringer Array
 - **Array type:** Square pitch
@@ -24,8 +31,12 @@
 | Zone | Inner radius | Outer radius | Channel groove depth (each face) | Target void fraction |
 |------|-------------|-------------|----------------------------------|----------------------|
 | Zone I (inner) | 0 mm | 457 mm | 3.18 mm (0.125 in) | ~25% |
-| Zone II (outer) | 457 mm | 698 mm | 2.38 mm (0.094 in) | ~18% |
-| Radial reflector | 698 mm | 850 mm | None (solid) | ~2% |
+| Zone II (outer) | 457 mm | ~610 mm | 2.38 mm (0.094 in) | ~18% |
+| Radial reflector | ~610 mm | 686 mm | None (solid) | ~2% |
+
+> *Zone II and reflector outer radii are derived from the corrected graphite assembly OD
+> of 1372 mm (r = 686 mm) with an estimated 3-in (76 mm) radial reflector. Exact zone
+> boundaries must be confirmed against ORNL-TM-728 Section 3.3 drawings.*
 
 ---
 
@@ -140,6 +151,7 @@ Same as Zone I except:
 | Temperature coefficient (overall) | −8.7 × 10⁻⁵ Δk/k/°C | Strongly negative |
 | Void coefficient | ~−0.5% Δk/k per 1% void | Negative |
 | Prompt neutron lifetime | ~3.0 × 10⁻⁴ s | Thermal spectrum |
+| Effective delayed neutron fraction β_eff (²³⁵U) | ~0.004 | *Corrected from 0.00265 (which matches ²³³U); static β for ²³⁵U = 0.0065; circulating-fuel reduction ≈40 % → β_eff ≈ 0.004. Verify against ORNL-TM-1647.* |
 
 ---
 

@@ -71,7 +71,7 @@ Each component directory contains:
 | Primary loop pressure | ~172 kPa (25 psig) max |
 | Fuel salt inventory | ~1993 L (70.4 ft³) total |
 | Reactor vessel OD | ~1.41 m (55.5 in) |
-| Reactor vessel height | ~2.44 m (96 in) overall |
+| Reactor vessel height | ~2.90 m (114 in) overall *(corrected from 96 in; see component specs)* |
 
 ---
 
