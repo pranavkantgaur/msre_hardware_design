@@ -60,7 +60,7 @@ Each component directory contains:
 | Parameter | Value |
 |---|---|
 | Reactor type | Circulating-fuel, graphite-moderated, thermal MSR |
-| Design thermal power | 10 MWt (operated at up to 8 MWt) |
+| Design thermal power | 7.34 MWt (operated at up to 8 MWt) |
 | Fuel salt | LiF-BeF₂-ZrF₄-UF₄ (65-29.1-5-0.9 mol %), later ²³³UF₄ |
 | Coolant salt | LiF-BeF₂ (66-34 mol %) |
 | Structural material | Hastelloy-N (INOR-8) |

@@ -25,7 +25,7 @@ The shielding is designed to reduce dose rates from the operating reactor to acc
 | Gamma energy spectrum | 2–3 MeV average (fission product mix) |
 | Target dose rate outside cell | <0.25 mSv/h (25 mrem/h) |
 | Required attenuation | >10⁶ (from ~250,000 mSv/h at source to <0.25 mSv/h) |
-| Required concrete thickness (2-MeV gamma, μ = 0.048 /cm in baritic concrete) | ~1.52 m (10 HVLs) |
+| Required concrete thickness (2-MeV gamma, μ = 0.048 cm⁻¹ in baritic concrete) | ~1.52 m (10 HVLs) |
 
 ### Shielding Dimensions by Wall Location
 

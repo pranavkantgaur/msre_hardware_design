@@ -1,5 +1,5 @@
 part_id,description,material,specification,quantity,unit,notes
-IC-001,BF3 proportional counter (startup range),Aluminum body; BF3 fill gas,300 mm active length; 19 mm OD; +300 to +600 V DC; 10-4 to 10 W range,2,ea,"Redundant startup-range channels; in dry-well detectors adjacent to vessel"
+IC-001,BF3 proportional counter (startup range),Aluminum body; BF3 fill gas,300 mm active length; 19 mm OD; +300 to +600 V DC; 10^-4 to 10 W range,2,ea,"Redundant startup-range channels; in dry-well detectors adjacent to vessel"
 IC-002,Compensated ion chamber (intermediate range),Aluminum / stainless body,400 mm active length; 38 mm OD; 0-500 V DC; 0.1 to 10000 W range,2,ea,"Bridging range; compensated (gamma-insensitive)"
 IC-003,Uncompensated ion chamber (power range),Aluminum / stainless body,400 mm active length; 38 mm OD; 0-200 V DC; 100 W to 10 MW,2,ea,"Normal operating range; signals for control and SCRAM"
 IC-004,Fission chamber (independent safety),Al-clad fissile coating; stainless body,Custom; 0.01 to 100000 W; independent power supply,1,ea,"Independent SCRAM channel; no shared power or signal with main NIS"

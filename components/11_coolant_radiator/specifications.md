@@ -11,7 +11,7 @@
 LMTD method:
 - Hot end ΔT = Coolant in (621 °C) − Air out (≈315 °C) = 306 °C (estimated; depends on air flow)
 - Cold end ΔT = Coolant out (546 °C) − Air in (38 °C) = 508 °C
-- LMTD = (508 − 306) / ln(508/306) = 202 / 0.508 = ~398 °C
+- LMTD = (508 − 306) / ln(508/306) = 202 / 0.508 ≈ 397.6 °C (used as ~398 °C)
 
 Overall heat transfer coefficient U (estimated for forced-air, finned-tube):
 - U ≈ 40–60 W/(m²·K) referred to bare tube area (typical for air coolers)
