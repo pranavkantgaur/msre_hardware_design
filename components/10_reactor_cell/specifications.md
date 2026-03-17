@@ -119,7 +119,7 @@ The shielding is designed to reduce dose rates from the operating reactor to acc
 | Parameter | Value |
 |-----------|-------|
 | Crane type | Electric overhead traveling (EOT) bridge crane |
-| Safe working load | 10,000 kg (10 tonnes) at hook |
+| Safe working load | **15,000 kg (15 tonnes) at hook** (revised from 10 t; see calculation below) |
 | Span (bridge) | 7.0 m |
 | Bay height (bottom of bridge to floor) | 5.5 m |
 | Hook height (from floor at max lift) | 5.0 m |
@@ -131,6 +131,12 @@ The shielding is designed to reduce dose rates from the operating reactor to acc
 | Motors | Explosion-proof; TEFC; 460 V 3-phase |
 | Structural classification | ASME HST-1 Service Class 4 or equivalent |
 | End stops | Hardened steel bumpers at both ends of bridge and trolley travel |
+
+**SWL derivation:**
+- Maximum single lift: reactor vessel + core assembly ≈ 10,065 kg
+- Rigging (spreader bar + slings + shackles) ≈ 400 kg
+- Total lifted weight ≈ 10,465 kg
+- Required SWL at 1.25× safety factor (ASME B30.2 recommendation): 10,465 × 1.25 = **13,081 kg → specify 15-tonne crane**
 
 ---
 

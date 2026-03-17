@@ -71,6 +71,25 @@
 | Open condition | Heater energized; plug melts in ~10 min |
 | Close condition | Heater de-energized; air jet applied; plug freezes in ~20 min |
 
+### FV-104 Heater (Type A — secondary drain isolation, in series with FV-101)
+
+| Parameter | Value |
+|-----------|-------|
+| Function | Second passive drain isolation valve in series with FV-101; provides defence-in-depth for passive drain actuation |
+| Location | Drain line between reactor vessel lower nozzle and FV-101 (~300 mm upstream of FV-101) |
+| Normal state | De-energized (valve frozen/closed) — both FV-101 and FV-104 must thaw to allow drain |
+| Heater type | NiCr resistance wire, 18 AWG; same design as FV-101 |
+| Total heater resistance | 29 Ω |
+| Voltage | 120 V AC |
+| Power | ~500 W |
+| Trip condition | De-energize on loss of AC; de-energize on SCRAM signal (same interlock as FV-101) |
+| Thaw time (passive only) | ~22 min (same thermal analysis as FV-101) |
+
+> **Safety rationale:** Having two freeze valves in series (FV-104 → FV-101) on the drain line
+> ensures that a single passive valve failure (stuck frozen due to local cold spot or heater
+> malfunction) does not prevent drainage. Both valves de-energize simultaneously on SCRAM,
+> so both must fail-frozen to prevent drainage — probability ≪ 10⁻⁴ per demand.
+
 ---
 
 ## 3. Freeze Section Material and Geometry
@@ -84,7 +103,8 @@
 | Section roughness (exterior) | Mill finish (no special finish needed) |
 | Heater wire spacing | ~3 mm pitch (wound helically on exterior) |
 | Refractory cement thickness (over wire) | 6.35 mm (0.25 in) |
-| Thermocouple (Type K) | 2 per valve; welded to exterior between heater wire turns |
+| Thermocouple (Type N) | 2 per valve; Hastelloy-N sheath; welded to exterior between heater wire turns |
+| TC replacement interval | 18 months or on drift >10 °C — whichever comes first |
 | Air nozzle position | Mid-freeze-section; tangential impingement |
 | Distance to nearest insulation | 25 mm (0.984 in) minimum clearance at each end |
 

@@ -146,3 +146,70 @@
 | Stack gas monitor | <1 mR/h (after decay) |
 
 > All off-gas equipment inside and adjacent to reactor cell must be accessible only with remote tools or after extended decay period.
+
+---
+
+## 8. Tritium Control Train Specifications
+
+The MSRE fuel salt contains trace ⁶Li even after ⁷Li enrichment (≥99.99%). Tritium is produced
+by ⁶Li + n → T + ⁴He and by ternary fission. Estimated production rate at 8 MWt:
+~50–200 Ci/year depending on ⁶Li residual content. Tritium exits the primary system primarily
+through the off-gas stream as elemental HT gas. A dedicated tritium control train is required
+for regulatory compliance.
+
+### 8.1 Tritium Control Train Flow Diagram
+
+```
+Off-gas outlet (post-HEPA)
+    → Catalytic oxidizer (OGS-014)      — converts HT + ½O₂ → HTO
+        → Desiccant cold trap (OGS-015) — captures HTO
+            → Tritium-in-gas monitor (OGS-016, outlet)
+                → Stack monitor (IC-027)
+                    → Release to atmosphere (if within limit)
+                        or → Return to desiccant store (if above limit)
+```
+
+### 8.2 Catalytic Oxidizer (OGS-014)
+
+| Parameter | Value |
+|-----------|-------|
+| Catalyst | Platinum on Al₂O₃ support (Engelhard or equivalent) |
+| Operating temperature | 150 °C (maintains Pt catalyst activity; avoids water condensation) |
+| Flow capacity | 2 L/min (matches maximum He sparge + off-gas flow) |
+| HT → HTO conversion efficiency | >99% at design conditions |
+| Inlet O₂ addition | Air injection ~0.5 L/min to provide stoichiometric O₂ for HT combustion |
+| Vessel material | 316L SS; rated 200 °C, 700 kPa |
+| Catalyst replacement interval | Every 5 years or on efficiency drop >5% |
+
+### 8.3 Desiccant Bed / Cold Trap (OGS-015)
+
+| Parameter | Value |
+|-----------|-------|
+| Desiccant material | Silica gel or molecular sieve 3A (water capacity 20–25% by weight) |
+| Vessel volume | 2 L |
+| Operating temperature | Ambient (25 °C) or chilled to 5–10 °C to improve capture efficiency |
+| HTO capture efficiency | >99.5% at design flow |
+| Change-out trigger | >1 Ci HTO captured OR pressure drop >10 kPa |
+| Waste form | Tritiated silica gel; dispose as solid low-level radioactive waste |
+| Estimated change-out interval | Every 3–6 months (based on 200 Ci/year tritium production with 99% capture upstream) |
+
+### 8.4 Tritium Monitoring (OGS-016)
+
+| Monitor | Location | Range | Alarm Setpoint |
+|---------|----------|-------|----------------|
+| OGS-016 upstream | Inlet to catalytic oxidizer | 10⁻³ to 10⁴ µCi/m³ | 100 µCi/m³ (alert); 10,000 µCi/m³ (action) |
+| OGS-016 downstream | Outlet of desiccant bed | 10⁻³ to 10² µCi/m³ | 1 µCi/m³ (desiccant breakthrough alarm) |
+
+Monitoring data logged continuously to regulatory reporting system. Annual tritium release
+report prepared from integrated stack monitor (IC-027) data and submitted to regulatory authority.
+
+### 8.5 Regulatory Tritium Release Limit
+
+| Standard | Limit |
+|----------|-------|
+| 10 CFR 20.1301 (NRC) / equivalent | ≤10 mrem/year effective dose to nearest member of public |
+| Derived air concentration (DAC) for HTO | 2×10⁻² µCi/mL in air |
+| Derived concentration guide for drinking water | 1×10⁻³ µCi/mL |
+
+The MSRE tritium control train design target: ≤10 Ci/year stack release (orders of magnitude
+below regulatory limits at any plausible site boundary). 
