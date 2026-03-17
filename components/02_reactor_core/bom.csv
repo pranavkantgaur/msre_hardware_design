@@ -1,0 +1,11 @@
+part_id,description,material,specification,quantity,unit,dimension_1_mm,dimension_2_mm,dimension_3_mm,notes
+RC-001,Graphite stringer (zone 1 — inner),AGOT nuclear-grade graphite,GrafTech AGOT; purity <25 ppm ash; <5 ppm B-equiv,876,ea,50.8,50.8,1676,"Sealed with furfuryl alcohol (3 cycles); channels on all 4 faces (6.35 × 6.35 mm groove per face)"
+RC-002,Graphite stringer (zone 2 — outer),AGOT nuclear-grade graphite,GrafTech AGOT; purity <25 ppm ash; <5 ppm B-equiv,264,ea,50.8,50.8,1676,"Sealed with furfuryl alcohol; smaller channels (4.75 × 4.75 mm groove per face)"
+RC-003,Graphite reflector block (annular reflector),AGOT nuclear-grade graphite,GrafTech AGOT; purity <25 ppm ash; <5 ppm B-equiv,120,ea,,,,"Various shapes to fill annular reflector zone; no channels; sealed"
+RC-004,Control rod thimble,Hastelloy-N,ASTM B622 seamless tube; UNS N10003,3,ea,44.5 OD,3.2 wall,1727 lg,"Closed lower end (welded Hastelloy-N cap); open upper end to vessel nozzle; full-pen weld to vessel nozzle"
+RC-005,Lower support grid plate,Hastelloy-N,ASTM B575 plate; UNS N10003,1,ea,1380 dia,25.4 thk,,"Square-hole grid: 50.8 × 50.8 mm pockets on 53.85 mm pitch; aligns and supports all stringers"
+RC-006,Upper hold-down grid plate,Hastelloy-N,ASTM B575 plate; UNS N10003,1,ea,1380 dia,19.1 thk,,"Identical hole pattern to lower grid; retains stringers against buoyancy/vibration"
+RC-007,Core support ring (lower),Hastelloy-N,ASTM B622 pipe; UNS N10003,1,ea,1380 OD,19.1 wall,254 ht,"Structural ring welded to vessel inner wall; supports lower grid plate"
+RC-008,Core support ring (upper),Hastelloy-N,ASTM B622 pipe; UNS N10003,1,ea,1380 OD,12.7 wall,152 ht,"Structural ring welded to upper head inner surface; supports upper hold-down grid"
+RC-009,Graphite stringer alignment pin,Hastelloy-N,ASTM B575; UNS N10003,100,ea,6.35 dia,,50 lg,"Press-fit into lower grid to locate every 4th stringer precisely"
+RC-010,Furfuryl alcohol monomer (sealing agent),Reagent-grade furfuryl alcohol,Technical grade >98% purity,as req'd,L,,,,"For vacuum impregnation of graphite; polymerizes at 150 C; carbonizes at 900 C"

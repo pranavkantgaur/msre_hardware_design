@@ -1,0 +1,11 @@
+part_id,description,material,specification,quantity,unit,dimension_1_mm,dimension_2_mm,dimension_3_mm,notes
+FZV-001,Freeze section tube (2-in drain line; FV-101 FV-103 FV-104),Hastelloy-N,ASTM B622; 2-in SCH40; UNS N10003,4,ea,60.3 OD,3.91 wall,152 lg,"No insulation on this section; butt-weld ends; smooth exterior for heater wire winding"
+FZV-002,Freeze section tube (1-in sample line; FV-102),Hastelloy-N,ASTM B622; 1-in SCH40; UNS N10003,1,ea,33.4 OD,3.38 wall,152 lg,"Same design; smaller bore"
+FZV-003,Freeze section tube (2-in coolant drain; FV-201),Hastelloy-N,ASTM B622; 2-in SCH40; UNS N10003,1,ea,60.3 OD,3.91 wall,152 lg,"Coolant loop drain freeze valve"
+FZV-004,Heater resistance wire (NiCr 80/20 nichrome),NiCr 80/20 resistance alloy,18 AWG; rated 1200 C continuous; 1.6 Ω/m,as req'd,m,,,,"Wound on freeze section at ~30 turns per 25 mm; resist = ~29 Ω total for 500 W at 120V"
+FZV-005,Refractory cement (heater embedment),Al2O3-based castable cement,Harbison-Walker Kast-O-Lite 30 or equiv; rated 1650 C,as req'd,kg,,,,"Encapsulates heater wire on freeze section; electrically isolating; cured at 120 C before first use"
+FZV-006,Heater lead extension (MI cable),NiCr/MgO/Inconel sheath,Thermon or Chromalox MI cable; rated 700 C; 2-conductor,5,ea,,,,"From heater winding terminals to junction box outside insulation; ~500 mm each"
+FZV-007,Cooling air nozzle,Hastelloy-N,ASTM B622 tube; 12.7 mm OD × 1.65 mm wall; UNS N10003,5,ea,12.7 OD,1.65 wall,100 lg,"Set-on weld to freeze section (tangential); delivers instrument air jet to freeze section"
+FZV-008,Thermocouple (Type K) for freeze section,Type K; Inconel sheath,MI thermocouple; 3.2 mm OD sheath; 300 mm lg,10,ea,3.2 OD,,300 lg,"2 per valve (redundant); welded well or press-against fitting on freeze section surface"
+FZV-009,Junction box (heater and TC terminations),316 SS or Hastelloy-N,NEMA 4X; 200 mm × 150 mm × 100 mm,5,ea,200,150,100,"One per valve; contains terminal strips for heater power and TC connections; outdoor rated"
+FZV-010,Instrument air tubing (to cooling nozzle),316 SS or Hastelloy-N,Swagelok 12.7 mm OD SS tubing; rated 700 C,as req'd,m,12.7 OD,1.65 wall,,"Connects instrument air header to each freeze valve cooling nozzle"
