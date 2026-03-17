@@ -16,6 +16,7 @@ The primary artefacts are:
 - `components/*/specifications.md` — Detailed dimensional and material specifications
 - `docs/` — Safety, materials, and system documentation
 - `bom_review/` — Multi-agent BOM review reports from msr-gstack
+- `cad/` — Parametric CadQuery CAD models (STEP + PNG) for all 12 components
 
 ---
 
@@ -106,9 +107,11 @@ dimension_1_mm, dimension_2_mm, dimension_3_mm, notes
 
 | Item | File | Status |
 |------|------|--------|
-| Graphite stringer count | `components/02_reactor_core/bom.csv` RC-001/002 | HOLD — needs ORNL-TM-728 Table 3.1 verification |
+| Graphite stringer count | `components/02_reactor_core/bom.csv` RC-001/002 | PARTIALLY RESOLVED — openmsr/msre (ORNL-TM-3039) confirms 617 total (full+fractional); our 509 full-sized + ~108 fractional is consistent. Exact zone split still needs ORNL-TM-728 Table 3.1. |
+| Vessel OD discrepancy | `cad/scripts/01_reactor_vessel.py` | OPEN — ORNL-TM-728: 55.5 in (1410 mm); ORNL-TM-3229 (via openmsr): references "60-in. OD ASME F&D head". Likely reflects flange OD vs. shell OD. See `docs/openmsr_validation.md §2.1`. |
 | Roof plug weight vs. crane SWL | `components/10_reactor_cell/bom.csv` RCL-002A/RCL-008 | Requires design decision on plug dims or crane upgrade to 25 t |
 | OGS-016 / IC-025A dual-tag | `components/08_off_gas_system/bom.csv` | Cross-reference note needed |
+| OpenMC k-eff validation | `cad/step/02_reactor_core.step` | PLANNED — convert core STEP to h5m via CAD_to_openMC and run criticality benchmark against openmsr/msre result. See `docs/openmsr_validation.md §2.3`. |
 
 ---
 
@@ -119,6 +122,7 @@ dimension_1_mm, dimension_2_mm, dimension_3_mm, notes
 | [msr-gstack](https://github.com/pranavkantgaur/msr-gstack) | Multi-agent MSR specialist team (review skills) |
 | [msr_data_layer](https://github.com/pranavkantgaur/msr_data_layer) | RAG access to ORNL historical reports |
 | [msr_physical_ai_layer](https://github.com/pranavkantgaur/msr_physical_ai_layer) | Physical-AI fabrication guidance |
+| [openmsr/msre](https://github.com/openmsr/msre) | Independent MSRE CAD model (OnShape v24) + OpenMC benchmarks + CFD validation — **primary cross-validation source for CAD geometry** |
 
 ---
 

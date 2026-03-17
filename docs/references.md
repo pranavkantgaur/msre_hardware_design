@@ -100,3 +100,20 @@ Most ORNL technical reports from the 1960s–1970s have been declassified and di
 | Nuclear Technology, Vol. 8, 1970 | "The MSRE: An Account of Its Scientific and Technical Accomplishments" | Summary paper |
 | Rosenthal, M.W. (2009) | "An Account of Oak Ridge National Laboratory's Thirteen Nuclear Reactors" | ORNL/TM-2009/181; historical context |
 | Forsberg, C.W. (2006) | "Molten Salt Reactor Technology Gaps" | ANS proceedings; gaps identified post-MSRE |
+
+---
+
+## Secondary Validation Sources (Cross-Check)
+
+These open-source resources provide independent dimensional verification and physics
+benchmarks for the CAD models. See `docs/openmsr_validation.md` for the full
+cross-validation strategy.
+
+| Source | Description | Key content |
+|--------|-------------|-------------|
+| openmsr/msre GitHub | https://github.com/openmsr/msre | OnShape CAD v24, msrecore.tex (multi-report dimension synthesis), OpenMC criticality notebooks, dynamic nodal model |
+| Akner, M. (2021) | "Validating results from the Molten Salt Reactor Experiment by use of turbulent CFD simulations." MSc thesis, Luleå University of Technology. https://ltu.diva-portal.org/smash/get/diva2:1546993/FULLTEXT01.pdf | CFD of PHX and radiator validated against MSRE operating data; most authoritative public validation of heat exchanger dimensions |
+| openmsr OnShape PHX model | https://cad.onshape.com/documents/03be2f510296a2e264886390/w/8cfbca3b7b9682dd4e53a998/e/54728fd981a1b4f5594c73d6 | Detailed primary heat exchanger CAD with tube-sheet, U-tube bundle, and nozzle geometry |
+| openmsr OnShape Radiator | https://cad.onshape.com/documents/bf944323ed6a82e05924078c/w/2a25d73c5a3a66824d2d5fbd/e/a83d5535602a053216fedff4 | Detailed coolant radiator CAD with finned-tube bundle |
+| openmsr OnShape MSRE Full | https://cad.onshape.com/documents/4f04f63bfd4138a61a54b3f8/v/88d7fcc8417e56a4ac5f9154/e/a2eb55ebc566613c79946855 | Complete MSRE assembly including vessel, core can, control rods, thermal shield, reactor pit |
+| Singh et al. (2018) | "Development and validation of a nonlinear dynamic model for the molten salt reactor experiment," Ann. Nucl. Energy 113:177–193. https://doi.org/10.1016/j.anucene.2017.11.002 | Nodal dynamic model — geometry-derived parameters (loop transit time, node masses, heat transfer areas) validated against MSRE operational data |
