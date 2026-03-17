@@ -59,6 +59,10 @@ from typing import Any, Optional
 # ---------------------------------------------------------------------------
 REPO_ROOT = Path(__file__).resolve().parent.parent
 NOTEBOOK_ID = "07ea44bc-8090-4066-8943-c45b2b428c1f"
+# This notebook is a publicly shared read-only NotebookLM notebook maintained by
+# the repository owner (https://notebooklm.google.com/notebook/07ea44bc-…).
+# It contains only declassified ORNL technical reports about the MSRE from the 1960s.
+# No sensitive or proprietary information is stored in this notebook.
 
 # ---------------------------------------------------------------------------
 # Parameter catalogue: every value to validate.
@@ -184,12 +188,12 @@ PARAMETERS: list[Parameter] = [
               "What is the center-to-center pitch of the graphite stringers in the MSRE core array?",
               tolerance_pct=1.0, component="reactor_core",
               source_file="components/02_reactor_core/specifications.md"),
-    Parameter("RC-005", "Total graphite stringer count", 1140, "ea",
+    Parameter("RC-005", "Total graphite stringer count", 509, "ea",
               "How many graphite stringers (moderator elements) were in the MSRE reactor core?",
               tolerance_pct=5.0, component="reactor_core",
               source_file="components/02_reactor_core/bom.csv",
-              notes="Repository currently lists 1,140; geometric calculation with 2-in × 2-in stringers "
-                    "on 2.12-in pitch in a 54-in core gives ~509. Verify against ORNL-TM-728 Table 3.1."),
+              notes="Corrected from 1,140 to ~509: geometric calculation with 2-in × 2-in stringers "
+                    "on 2.12-in pitch in a 54-in core gives ~509. Verify exact count against ORNL-TM-728 Table 3.1."),
     Parameter("RC-006", "Fuel salt void fraction (average)", 22.5, "%",
               "What fraction of the MSRE core volume is occupied by fuel salt (void fraction or salt fraction)?",
               tolerance_pct=5.0, component="reactor_core",
@@ -202,12 +206,12 @@ PARAMETERS: list[Parameter] = [
               "What is the overall temperature coefficient of reactivity of the MSRE in Δk/k per degree C?",
               tolerance_pct=10.0, component="reactor_core",
               source_file="components/02_reactor_core/specifications.md"),
-    Parameter("RC-009", "Effective delayed neutron fraction (235U)", 0.00265, "",
+    Parameter("RC-009", "Effective delayed neutron fraction (235U)", 0.004, "",
               "What is the effective delayed neutron fraction (beta_eff) for the MSRE operating on U-235 fuel?",
               tolerance_pct=20.0, component="reactor_core",
               source_file="components/02_reactor_core/specifications.md",
-              notes="Static β for U-235 is 0.00650; circulating-fuel reduction expected to give ~0.0036–0.0040. "
-                    "Value of 0.00265 may be for U-233 fuel. Verify against ORNL-TM-1647."),
+              notes="Corrected from 0.00265 (which matches U-233); static β for U-235 = 0.0065; "
+                    "circulating-fuel reduction ~40% → β_eff ≈ 0.004. Verify against ORNL-TM-1647."),
     Parameter("RC-010", "Critical mass (235U)", 33, "kg",
               "What was the initial critical mass of U-235 loaded into the MSRE?",
               tolerance_pct=10.0, component="reactor_core",

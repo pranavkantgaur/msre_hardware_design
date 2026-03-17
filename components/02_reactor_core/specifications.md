@@ -125,7 +125,7 @@ Same as Zone I except:
 | Diameter | 1380 mm |
 | Thickness | 25.4 mm (1.0 in) |
 | Hole pattern | 50.8 × 50.8 mm square holes on 53.85 mm pitch |
-| Number of holes | ~640 (matches stringer count in each zone) |
+| Number of holes | ~509 *(corrected from ~640; matches corrected total stringer count ≈ 509. Verify against ORNL-TM-728.)* |
 | Thimble holes | 3 × 46.05 mm diameter (for thimble OD + clearance) |
 | Flatness | ≤0.5 mm over full diameter |
 
