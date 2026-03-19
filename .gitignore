@@ -1,0 +1,58 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+.venv/
+venv/
+env/
+.env
+
+# Node / npm (for markdownlint-cli)
+node_modules/
+npm-debug.log*
+package-lock.json
+
+# OS
+.DS_Store
+Thumbs.db
+*.swp
+*~
+
+# Editor
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Temporary / scratch
+*.tmp
+*.bak
+/tmp/
+
+# CAD / binary design files (not yet in scope — see .ai/tech-stack.md)
+*.stl
+*.step
+*.stp
+*.dxf
+*.dwg
+*.iges
+*.igs
+
+# Large data dumps
+*.tar
+*.tar.gz
+*.zip
+*.7z
+
+# Secrets / credentials
+.env.local
+.env.*.local
+secrets.yaml
+secrets.json

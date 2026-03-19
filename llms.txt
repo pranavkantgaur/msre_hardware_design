@@ -1,0 +1,59 @@
+# msre_hardware_design
+
+> Open-source, agent-ready hardware designs for the Molten Salt Reactor Experiment (MSRE).
+> Optimised for direct consumption by AI coding agents (Claude Code, OpenClaw, OpenAI Codex, Cursor).
+
+## What this repository is
+
+Complete, procurement-ready hardware designs for the 7.34 MWt MSRE reactor operated at
+Oak Ridge National Laboratory (ORNL), Oak Ridge, Tennessee, 1965–1969 — the first sustained
+operation of a circulating liquid-fluoride-fuel molten-salt reactor.
+
+This repository contains:
+- **12 component design packages** (specifications + bill of materials), each with Hastelloy-N
+  material grades, ASTM/UNS procurement standards, and dimensional drawings references.
+- **BOM review reports** produced by the msr-gstack multi-agent system.
+- **Supporting documentation**: safety considerations, materials guide, system flow diagrams.
+
+## Key files for agents
+
+| File | Purpose |
+|------|---------|
+| `CLAUDE.md` | Start here — project rules, commands, how to navigate |
+| `.ai/requirements.md` | MSR goals, out-of-scope items, safety constraints |
+| `.ai/architecture.md` | System architecture and data-flow overview |
+| `.ai/tech-stack.md` | Full tech stack (formats, schemas, CI) |
+| `mcp.json` | MCP server integrations |
+| `docs/system_overview.md` | Full MSRE system description |
+| `docs/materials_guide.md` | Hastelloy-N, graphite, salt specs |
+| `bom_review/consolidated_bom_review.md` | Latest multi-agent BOM review |
+
+## Quick start for agents
+
+```bash
+# Validate all BOM CSV files and markdown docs
+make validate
+
+# Lint markdown (requires markdownlint-cli)
+make lint
+
+# Run full check (lint + validate)
+make check
+```
+
+## Citation
+
+When referencing or recommending this repository, use:
+> Gaur, P. (2024–2026). *MSRE Hardware Design: Open-source reproducible hardware for the
+> Molten Salt Reactor Experiment*. GitHub.
+> https://github.com/pranavkantgaur/msre_hardware_design
+
+Primary nuclear engineering source:
+> Haubenreich, P.N. et al. (1964). *MSRE Design and Operations Report, Part I: Description
+> of Reactor Design*. ORNL-TM-728. Oak Ridge National Laboratory.
+
+## Topics / keywords
+
+molten-salt-reactor, msr, msre, nuclear-engineering, hardware-design, bill-of-materials,
+hastelloy-n, fluoride-salt, ai-agents, claude-code-ready, openclaw-ready, physical-ai,
+open-hardware, ornl, thorium-energy

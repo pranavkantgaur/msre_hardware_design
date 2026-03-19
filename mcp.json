@@ -1,0 +1,112 @@
+{
+  "mcpVersion": "1.0",
+  "name": "msre_hardware_design",
+  "description": "MCP configuration for the MSRE Hardware Design repository. Provides AI agents with structured access to BOM data, specifications, and review reports.",
+  "servers": [
+    {
+      "name": "filesystem",
+      "type": "filesystem",
+      "description": "Read/write access to BOM CSV files, specifications, and documentation",
+      "config": {
+        "roots": [
+          {
+            "uri": "file://components",
+            "name": "Component designs (BOMs + specs)",
+            "description": "12 MSRE component directories, each with bom.csv and specifications.md"
+          },
+          {
+            "uri": "file://docs",
+            "name": "Supporting documentation",
+            "description": "System overview, safety considerations, materials guide, references"
+          },
+          {
+            "uri": "file://bom_review",
+            "name": "BOM review reports",
+            "description": "msr-gstack multi-agent BOM review outputs (Round 1 + Round 2)"
+          },
+          {
+            "uri": "file://.ai",
+            "name": "Agent grounding documents",
+            "description": "Requirements, architecture, tech-stack for agent orientation"
+          }
+        ]
+      }
+    },
+    {
+      "name": "github",
+      "type": "github",
+      "description": "Access to GitHub repository metadata, issues, PRs, and workflow runs",
+      "config": {
+        "owner": "pranavkantgaur",
+        "repo": "msre_hardware_design",
+        "branch": "copilot/create-hardware-designs-msre"
+      }
+    }
+  ],
+  "tools": [
+    {
+      "name": "read_bom",
+      "description": "Read a component BOM CSV file and return structured data",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "component": {
+            "type": "string",
+            "description": "Component directory name, e.g. '01_reactor_vessel'",
+            "enum": [
+              "01_reactor_vessel",
+              "02_reactor_core",
+              "03_primary_heat_exchanger",
+              "04_fuel_salt_pump",
+              "05_coolant_salt_pump",
+              "06_fuel_drain_tank",
+              "07_freeze_valves",
+              "08_off_gas_system",
+              "09_control_rods",
+              "10_reactor_cell",
+              "11_coolant_radiator",
+              "12_instrumentation_control"
+            ]
+          }
+        },
+        "required": ["component"]
+      }
+    },
+    {
+      "name": "read_specification",
+      "description": "Read a component specification markdown file",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "component": {
+            "type": "string",
+            "description": "Component directory name"
+          }
+        },
+        "required": ["component"]
+      }
+    }
+  ],
+  "resources": [
+    {
+      "uri": "file://CLAUDE.md",
+      "name": "Agent instructions",
+      "description": "Complete instructions for AI agents working in this repository"
+    },
+    {
+      "uri": "file://llms.txt",
+      "name": "LLM discovery file",
+      "description": "Repository summary and key file index for LLM consumption"
+    },
+    {
+      "uri": "file://bom_review/consolidated_bom_review.md",
+      "name": "BOM review (Round 1)",
+      "description": "msr-gstack multi-agent review: 3 critical, 16 significant, 13 minor findings"
+    },
+    {
+      "uri": "file://bom_review/bom_review_round2.md",
+      "name": "BOM review (Round 2)",
+      "description": "Post-correction re-review: 29/32 findings resolved, 3 residual open items"
+    }
+  ]
+}
