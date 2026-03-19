@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The Molten Salt Reactor Experiment (MSRE) was a 7.34 MWt (design) / ~8 MWt (peak operated) graphite-moderated, circulating-fluoride-salt reactor operated at Oak Ridge National Laboratory (ORNL), Oak Ridge, Tennessee from June 1965 to December 1969. It was the first sustained operation of a fluid-fueled molten-salt reactor and validated the molten salt reactor concept for power generation.
+The Molten Salt Reactor Experiment (MSRE) was a 7.5 MWt (nominal per ORNL MSRE film, ORNL 1966) / 7.34 MWt (per ORNL-4728 design report) graphite-moderated, circulating-fluoride-salt reactor operated at Oak Ridge National Laboratory (ORNL), Oak Ridge, Tennessee from June 1965 to December 1969. It was the first sustained operation of a fluid-fueled molten-salt reactor and validated the molten salt reactor concept for power generation.
 
 The MSRE demonstrated:
 - Stable operation of a circulating liquid-fluoride fuel system.
@@ -74,7 +74,7 @@ Lower plenum → Reactor Core inlet (loop repeats)
 ```
 
 **Loop volume:** ~1993 L (70.4 ft³) total fuel salt in system  
-**Pipe diameter (main):** ~101.6 mm (4 in) schedule-40 Hastelloy-N  
+**Pipe diameter (main):** ~141.3 mm (5 in) schedule-40 Hastelloy-N; per ORNL MSRE film (ORNL, 1966)  
 **Average fuel velocity in core channels:** ~0.22 m/s  
 **Fuel residence time in core:** ~7.4 s (at design flow)
 

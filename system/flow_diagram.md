@@ -11,21 +11,21 @@ This document describes the Process Flow Diagram (PFD) and the Piping and Instru
 ```
 [Reactor Vessel — Core Outlet Plenum]
           |
-          | (4-in Hastelloy-N pipe, ~650 °C)
+          | (5-in Hastelloy-N pipe, ~650 °C)
           ↓
 [Fuel Salt Pump — Bowl/Sump]
   - Centrifugal, sump-type
   - 1750 rpm, 75 hp motor
   - Pump discharge: ~170 kPa (25 psi) above suction
           |
-          | (4-in pipe, pump discharge)
+          | (5-in pipe, pump discharge)
           ↓
 [Primary Heat Exchanger — Shell Side (fuel salt)]
   - Single-pass shell, U-tube bundle
   - Fuel salt enters top, exits bottom of shell
   - Heat transferred to coolant salt (tube side)
           |
-          | (4-in pipe, ~632 °C)
+          | (5-in pipe, ~632 °C)
           ↓
 [Reactor Vessel — Core Inlet Plenum]
   - Fuel salt distributed to graphite core channels
@@ -40,7 +40,7 @@ This document describes the Process Flow Diagram (PFD) and the Piping and Instru
 | TI-102 | Fuel Salt Temperature (core outlet) | Core outlet pipe | Thermocouple (Type K) |
 | TI-103 | Fuel Salt Temperature (pump bowl) | Pump bowl | Thermocouple (Type K) |
 | TI-104 | Fuel Salt Temperature (HX outlet) | HX fuel outlet | Thermocouple (Type K) |
-| FI-101 | Fuel Salt Flow Rate | Primary loop pipe | Magnetic flowmeter (AC excitation) |
+| FI-101 | Fuel Salt Flow Rate | Primary loop pipe | Magnetic flowmeter (AC excitation); inline in 5-in pipe |
 | PI-101 | Fuel Salt Pressure | Pump discharge | Differential pressure cell |
 | LI-101 | Fuel Salt Level (pump bowl) | Pump bowl | Differential pressure / gamma densitometer |
 

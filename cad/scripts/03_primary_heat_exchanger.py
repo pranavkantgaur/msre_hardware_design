@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
 """
-03 — Primary Heat Exchanger (ORNL-TM-728 §3.4)
+03 — Primary Heat Exchanger (ORNL-TM-728 §3.4; ORNL MSRE film, 1966)
 
 Shell-and-U-tube heat exchanger:
-  - Shell OD 457.2 mm  wall 6.35 mm  length 5029 mm
-  - 159 U-tubes, OD 9.525 mm  wall 0.875 mm
+  - Shell OD 457.2 mm  wall 6.35 mm  length 2440 mm (~8 ft per ORNL MSRE film)
+  - 159 U-tubes, OD 12.7 mm (1/2-in per ORNL MSRE film)  wall 1.07 mm
+  - Triangular pitch 19.05 mm (3/4-in) for 1/2-in OD tubes
   - U-bend radius 25.4 mm min
-  - Two tube sheets, inlet/outlet nozzles
+  - Two tube sheets, inlet/outlet nozzles (5-in SCH40 main fuel loop)
 
 Model: shell with representative tube bundle (12 visible tubes for clarity).
 """
@@ -18,14 +19,14 @@ from render_utils import render_and_export
 # --- parameters (mm) ---
 SHELL_OD  = 457.2
 SHELL_WT  = 6.35
-SHELL_L   = 5029.0
-TUBE_OD   = 9.525
-TUBE_WT   = 0.875     # wall
-TUBE_PITCH= 12.7      # triangular pitch (1.33 × OD = standard; corrected from 15.9)
+SHELL_L   = 2440.0      # ~8 ft per ORNL MSRE film (ORNL, 1966); corrected from 5029 mm
+TUBE_OD   = 12.7        # 1/2-in per ORNL MSRE film (ORNL, 1966); corrected from 9.525 mm
+TUBE_WT   = 1.07        # 0.042-in wall; corrected from 0.875 mm
+TUBE_PITCH= 19.05       # 3/4-in triangular pitch for 1/2-in tubes; corrected from 12.7 mm
 UBEND_R   = 25.4
-TS_THICK  = 76.2      # tube-sheet thickness (3.0 in per spec; corrected from 38.1)
-# inlet / outlet nozzles
-NOZZLE_OD = 114.3; NOZZLE_WT = 6.02; NOZZLE_L = 150
+TS_THICK  = 76.2        # tube-sheet thickness (3.0 in per spec)
+# inlet / outlet nozzles — 5-in SCH40 main fuel loop (per ORNL MSRE film)
+NOZZLE_OD = 141.3; NOZZLE_WT = 6.55; NOZZLE_L = 150
 
 def make_phx():
     shell_id = SHELL_OD - 2 * SHELL_WT

@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 """
-11 — Coolant Radiator (ORNL-TM-728 §3.11)
+11 — Coolant Radiator (ORNL-TM-728 §3.11; ORNL MSRE film, 1966)
 
 Air-cooled forced-convection finned-tube radiator:
-  - Finned tubes: OD 25.4 mm  fin OD 50.8 mm  fin pitch ~25 mm
+  - Finned tubes: bare OD 19.05 mm (3/4-in per ORNL MSRE film)
+    fin OD 44.45 mm  fin pitch ~25 mm; arrayed in banks of 12 tubes
   - Bundle depth ~0.45 m (one tube row)
   - Headers: 200 × 200 mm square box  wall 9.53 mm
   - Inlet/outlet nozzles 3-in SCH40 (88.9 mm OD)
@@ -16,8 +17,8 @@ sys.path.insert(0, str(pathlib.Path(__file__).parent))
 import cadquery as cq
 from render_utils import render_and_export
 
-TUBE_OD    =  25.4
-FIN_OD     =  50.8
+TUBE_OD    =  19.05    # 3/4-in per ORNL MSRE film (ORNL, 1966); corrected from 25.4 mm
+FIN_OD     =  44.45    # = 19.05 + 2×12.7 mm fin height; corrected from 50.8 mm
 FIN_T      =   0.889
 FIN_PITCH  =  25.4     # centre-to-centre
 TUBE_PITCH =  60.0     # tube-to-tube, transverse

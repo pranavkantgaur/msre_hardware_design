@@ -1,14 +1,15 @@
 #!/usr/bin/env python3
 """
-01 — Reactor Vessel (ORNL-TM-728 §3.2)
+01 — Reactor Vessel (ORNL-TM-728 §3.2; ORNL MSRE film, 1966)
 
 Hastelloy-N cylindrical pressure vessel with:
   - Cylindrical shell  OD 1410 mm  wall 12.7 mm  height 2134.6 mm
-  - Upper removable 2:1 semi-ellipsoidal head  t = 19.05 mm
-  - Lower fixed 2:1 semi-ellipsoidal head  t = 19.05 mm
+  - Upper removable 2:1 semi-ellipsoidal head  t = 28.6 mm (1-1/8-in cold-pressed plate
+    per ORNL MSRE film, ORNL 1966; corrected from 19.05 mm)
+  - Lower fixed 2:1 semi-ellipsoidal head  t = 28.6 mm (same)
   - Total assembled height ~2900 mm
-  - Fuel-salt inlet nozzle  4-in SCH40 (114.3 mm OD) on lower head
-  - Fuel-salt outlet nozzle 4-in SCH40 (114.3 mm OD) on upper head
+  - Fuel-salt inlet nozzle  5-in SCH40 (141.3 mm OD) on lower head (per ORNL MSRE film)
+  - Fuel-salt outlet nozzle 5-in SCH40 (141.3 mm OD) on upper head (per ORNL MSRE film)
   - Three control-rod nozzles 2-in SCH40 (60.3 mm OD) on upper head
 
 Known simplifications vs. openmsr/msre OnShape model (see docs/openmsr_validation.md):
@@ -30,13 +31,13 @@ OD      = 1410.0
 WT      = 12.7          # cylindrical shell wall
 ID      = OD - 2 * WT
 H_SHELL = 2134.6        # tan-to-tan
-T_HEAD  = 19.05         # head wall thickness
+T_HEAD  = 28.6          # head wall thickness: 1-1/8-in per ORNL MSRE film (corrected from 19.05 mm)
 # 2:1 ellipse crown depth = ID/4 (per ASME UG-32: h = D/4 where D is inside diameter)
 H_OUTER = ID / 4        # outer crown depth ≈ 346.15 mm (corrected from OD/4)
 H_INNER = H_OUTER - T_HEAD / 2   # inner crown depth
 
-# Nozzle dimensions
-N_SALT_OD = 114.3; N_SALT_WT = 6.02; N_SALT_L = 200
+# Nozzle dimensions — 5-in SCH40 fuel nozzles per ORNL MSRE film (corrected from 4-in)
+N_SALT_OD = 141.3; N_SALT_WT = 6.55; N_SALT_L = 200
 N_ROD_OD  =  60.3; N_ROD_WT  = 3.91; N_ROD_L  = 200
 
 N_PTS = 20   # arc resolution

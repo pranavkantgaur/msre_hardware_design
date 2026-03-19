@@ -26,7 +26,7 @@ IMP_T     =   25.4    # impeller thickness
 NECK_OD   =  168.3    # pump neck (riser tube) OD
 NECK_WT   =    7.11
 NECK_H    = 1829.0 - BOWL_H   # neck height so total = 1829 mm (spec total length)
-DISCHARGE_OD = 114.3; DISCHARGE_WT = 6.02
+DISCHARGE_OD = 141.3; DISCHARGE_WT = 6.55  # 5-in SCH40 per ORNL MSRE film (corrected from 4-in)
 
 def make_pump():
     bowl_id = BOWL_OD - 2 * BOWL_WT

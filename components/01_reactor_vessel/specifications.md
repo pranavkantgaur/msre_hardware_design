@@ -16,7 +16,7 @@
 ### Upper Head (Ellipsoidal, Removable)
 - **Type:** 2:1 semi-ellipsoidal
 - **Outside diameter:** 1410.0 mm (55.50 in)
-- **Thickness:** 19.05 mm (0.75 in)
+- **Thickness:** 28.6 mm (1-1/8 in; cold-pressed per ORNL MSRE film, ORNL 1966; corrected from 19.05 mm)
 - **Straight flange:** 76.2 mm (3.0 in)
 - **Flange OD:** 1460.0 mm (57.5 in)
 - **Bolt circle:** 1435.0 mm (56.5 in)
@@ -26,7 +26,7 @@
 ### Lower Head (Ellipsoidal, Fixed)
 - **Type:** 2:1 semi-ellipsoidal
 - **Outside diameter:** 1410.0 mm (55.50 in)
-- **Thickness:** 19.05 mm (0.75 in)
+- **Thickness:** 28.6 mm (1-1/8 in; cold-pressed per ORNL MSRE film, ORNL 1966; corrected from 19.05 mm)
 - **Welded to cylindrical shell (permanent)**
 
 ### Overall Vessel Height
@@ -56,8 +56,8 @@
 
 | Nozzle ID | Service | Size | Rating | Location | Orientation |
 |-----------|---------|------|--------|----------|-------------|
-| N1 | Fuel salt inlet | 4-in SCH40 (114.3 mm OD × 6.02 mm WT) | 345 kPa / 704 °C | Lower head, centerline | Vertical, downward |
-| N2 | Fuel salt outlet | 4-in SCH40 (114.3 mm OD × 6.02 mm WT) | 345 kPa / 704 °C | Upper head, off-center | Vertical, upward |
+| N1 | Fuel salt inlet | 5-in SCH40 (141.3 mm OD × 6.55 mm WT; per ORNL MSRE film, ORNL 1966; corrected from 4-in) | 345 kPa / 704 °C | Lower head, centerline | Vertical, downward |
+| N2 | Fuel salt outlet | 5-in SCH40 (141.3 mm OD × 6.55 mm WT; per ORNL MSRE film, ORNL 1966; corrected from 4-in) | 345 kPa / 704 °C | Upper head, off-center | Vertical, upward |
 | N3 | Control rod #1 (regulating) | 2-in SCH40 (60.3 mm OD × 3.91 mm WT) | 345 kPa / 704 °C | Upper head | Vertical, upward |
 | N4 | Control rod #2 (regulating) | 2-in SCH40 | 345 kPa / 704 °C | Upper head | Vertical, upward |
 | N5 | Control rod #3 (safety) | 2-in SCH40 | 345 kPa / 704 °C | Upper head | Vertical, upward |

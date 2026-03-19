@@ -51,8 +51,8 @@ Plan View (approximate, not to scale):
 - Thermal expansion of graphite and vessel must be accommodated by the core support design (sliding fit with graphite retaining structure).
 
 ### Reactor Vessel ↔ Piping
-- Fuel outlet nozzle: top of vessel (DN100 / 4-in schedule-40 Hastelloy-N butt weld)
-- Fuel inlet nozzle: bottom of vessel lower plenum (DN100 / 4-in)
+- Fuel outlet nozzle: top of vessel (DN125 / 5-in schedule-40 Hastelloy-N butt weld); 5-in main loop piping per ORNL MSRE film (ORNL, 1966)
+- Fuel inlet nozzle: bottom of vessel lower plenum (DN125 / 5-in)
 - Control rod nozzles: top head (3 × DN50 / 2-in penetrations with seal weldments)
 - Thermocouple penetrations: multiple (DN12 / 0.5-in)
 - Off-gas nozzle: top head (DN12 / 0.5-in)
@@ -65,7 +65,7 @@ Plan View (approximate, not to scale):
 - Off-gas outlet: DN12 line from pump bowl gas space to off-gas system
 
 ### Primary Heat Exchanger ↔ Piping
-- Fuel salt (shell side): 4-in inlet/outlet nozzles, butt-welded
+- Fuel salt (shell side): 5-in inlet/outlet nozzles, butt-welded; 5-in main loop pipe per ORNL MSRE film (ORNL, 1966)
 - Coolant salt (tube side): 3-in inlet/outlet nozzles at tube sheet, butt-welded
 - Shell is horizontal orientation; coolant enters cold leg (from radiator), exits hot leg (to radiator)
 

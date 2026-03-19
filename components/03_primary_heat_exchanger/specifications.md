@@ -43,9 +43,9 @@
 
 | Parameter | Value |
 |-----------|-------|
-| Tube ID | 7.75 mm (0.305 in) |
+| Tube ID | 10.56 mm (0.416 in; = 12.7 − 2×1.07 mm) |
 | Number of tubes | ~159 |
-| Tube length (one leg) | ~4,877 mm |
+| Tube length (one leg) | ~2,190 mm (corrected from ~4,877 mm for shorter shell) |
 | Total tube-side flow area | ~7,510 mm² |
 | Coolant salt velocity in tubes | ~2.7 m/s |
 | Tube-side Reynolds number | ~21,000 (turbulent) |
@@ -91,15 +91,15 @@
 | Shell OD | 457.2 mm (18.0 in) |
 | Shell wall thickness | 6.35 mm (0.25 in) |
 | Shell material | Hastelloy-N |
-| Shell length (tube sheet to tube sheet) | 5,029 mm (198.0 in) |
+| Shell length (tube sheet to tube sheet) | 2,440 mm (~96 in / ~8 ft per ORNL MSRE film, ORNL 1966; corrected from 5,029 mm) |
 | MAWP (shell side) | 345 kPa gauge at 704 °C |
 
 ### Tubes
 | Parameter | Value |
 |-----------|-------|
-| Tube OD | 9.525 mm (0.375 in) |
-| Tube wall | 0.889 mm (0.035 in) |
-| Tube pitch | 12.7 mm triangular |
+| Tube OD | 12.7 mm (0.500 in / 1/2-in per ORNL MSRE film, ORNL 1966; corrected from 9.525 mm) |
+| Tube wall | 1.07 mm (0.042 in; corrected from 0.889 mm) |
+| Tube pitch | 19.05 mm (3/4-in) triangular (corrected from 12.7 mm to suit 1/2-in OD tubes) |
 | Tube U-bend radius | 25.4 mm minimum |
 | Tube material | Hastelloy-N, ASTM B622 |
 | MAWP (tubes) | 345 kPa gauge at 704 °C |
